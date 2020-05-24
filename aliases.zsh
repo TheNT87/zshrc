@@ -9,6 +9,7 @@ export EDITOR="nvim"
 # http://superuser.com/questions/403355/how-do-i-get-searching-through-my-command-history-working-with-tmux-and-zshell
 bindkey -e
 
+alias wheather='curl wttr.in'
 alias vi="nvim"
 alias vim="nvim"
 alias aedit=" $EDITOR $ZSH_CONFIG/aliases.zsh; source $ZSH_CONFIG/aliases.zsh"

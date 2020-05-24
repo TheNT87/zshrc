@@ -72,8 +72,8 @@ function promptSetup () {
     # setup the main sign
     if [[ $CURRENT_USER == 'root' ]]; then
         PR_SIGN+="☠"
-    elif [[ $CURRENT_USER == 'vagrant' ]]; then
-        PR_SIGN+="𝓥"
+    elif [[ $CURRENT_USER == 'nt' ]]; then
+        PR_SIGN+="nt|${PWD}"
     else
         PR_SIGN+="∴"
     fi
