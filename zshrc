@@ -44,9 +44,6 @@ sources+="$ZSH_CONFIG/fasd.zsh"
 # fzf integration and config
 sources+="$ZSH_CONFIG/fzf.zsh"
 
-# eccenca internal stuff
-sources+="/Users/seebi/Projects/eccenca/devops/unix-environment/functions.zsh"
-
 # Private aliases and adoptions added at the very end (e.g. to start byuobu)
 sources+="$ZSH_CONFIG/private.final.zsh"
 
