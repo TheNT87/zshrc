@@ -55,7 +55,7 @@ function promptSetup () {
     # rootshell gets another prompt sign
     CURRENT_USER=`whoami`
     PR_SIGN=$NOCOLOR
-    PR_SIGN+="%F{160}%B"
+    PR_SIGN+="%F{57}%B"
 
     # prepend the hostname if we are outside
     if [[ "$MYHOSTEXPRESSION" == "" ]]; then
@@ -73,7 +73,7 @@ function promptSetup () {
     if [[ $CURRENT_USER == 'root' ]]; then
         PR_SIGN+="☠"
     elif [[ $CURRENT_USER == 'nt' ]]; then
-        PR_SIGN+="nt|${PWD}"
+        PR_SIGN+="𝓷𝓽"
     else
         PR_SIGN+="∴"
     fi
@@ -108,7 +108,7 @@ function eraseSecondLine () {
 add-zsh-hook preexec eraseSecondLine
 
 function set-window-title () {
-    MYTITLE=$(basename $PWD)
+    MYTITLE=${PWD}
     MYTITLE=${MYTITLE: -20}
     echo -e "\033];$MYTITLE\007"
 }
